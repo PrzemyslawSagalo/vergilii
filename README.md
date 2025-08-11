@@ -16,6 +16,9 @@ Your guide through the complexities of software projects. A curated playbook of 
 * **Asynchronous-First Communication**
     We communicate asynchronously to protect focus time. Do not expect immediate replies; we respond as soon as we are able. Plan your work accordingly and provide full context in your initial message to make this effective.
 
+* **Ownership and Action**
+    Issues and setbacks are normal in development. When you discover a problem, convert complaints into action by creating a task so it can be tracked, prioritized, and solved.
+
 ## Good coding practices
 
 * Instantly update the changelog with new information.
