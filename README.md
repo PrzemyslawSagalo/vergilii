@@ -29,3 +29,21 @@ Your guide through the complexities of software projects. A curated playbook of 
 * If your changes are not ready to be submitted at the end of your work day, make a dirty branch, commit all of your changes to it (typically git commit -am'WIP') and push it to a remote.
 * TDD works only when you fully understand the problem and interface. Building a thing is a good way to explore.
 * You should set up a clear naming convention at the beginning of your project and stick to it. 
+
+## Daily Toolkit
+
+### Productivity
+
+* [Nozbe](https://get.nozbe.com/przemyslawsagalo3) - It serves as the primary source of truth for my family’s tasks and my own.
+* [brain.fm](brain.fm/invite/19r6Zjg9rx) - Music to focus
+
+### AI tools
+* [Google Gemini](g.co/g1referral/DVG30VZB) - Similar to Chat GPT but developed by Google. Its full integration with Google Workspace is a significant advantage, allowing users access to both services for one fee.
+
+---
+
+### 🤝 Transparency Note
+
+Just so you know, some of the links on this page are **referral links**. This means that if you click on them and make a purchase or sign up, I might receive a small commission or benefit from the company, at no extra cost to you.
+
+I only recommend products and services that I've personally used and genuinely believe will be valuable to you. Your support through these links helps me continue to share valuable resources and content like this and **improve the quality, also for you!**
