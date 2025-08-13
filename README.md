@@ -1,6 +1,8 @@
 # vergilii
 Your guide through the complexities of software projects. A curated playbook of principles, checklists, and strategies for senior engineers and tech leads.
 
+[Useful web resources](https://raindrop.io/przemyslaw-sagalo/vault-public-58751187)
+
 ## Project Kick-off
 
 ### Project Kick-off: Core Questions
