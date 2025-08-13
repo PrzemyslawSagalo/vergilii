@@ -38,7 +38,7 @@ Your guide through the complexities of software projects. A curated playbook of 
 
 * [Nozbe](https://get.nozbe.com/przemyslawsagalo3) - It serves as the primary source of truth for my family’s tasks and my own.
 * [brain.fm](https://brain.fm/invite/19r6Zjg9rx) - Music to focus
-* [raindrop](https://raindrop.io/) - A bookmark manager that offers tagging options and fully integrates with a RESTful HTTP API.
+* [raindrop](https://raindrop.io/) - A bookmark manager that offers tagging options and fully integrates through a RESTful HTTP API.
 
 ### AI tools
 * [Google Gemini](https://g.co/g1referral/DVG30VZB) - Similar to Chat GPT but developed by Google. Its full integration with Google Workspace is a significant advantage, allowing users access to both services for one fee.
