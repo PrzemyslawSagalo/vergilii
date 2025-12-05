@@ -1,5 +1,9 @@
 # Git Cheat Sheet
 
+## git clean
+
+- Force remove untracked files and directories `git clean -f -d`
+
 ## Safely Undoing Commits on a Shared Branch
 
 1.  **Create a "Fix" Branch**
