@@ -1,11 +1,8 @@
 # Concurrency Models in Python
 
-| Feature | AsyncIO (User-Level Threads) | Threading (Kernel-Level Threads) | Multiprocessing (Processes) |
+| Feature | AsyncIO | Threading | Multiprocessing |
 | :--- | :--- | :--- | :--- |
-| **Scheduling Manager** | **Runtime Code** (Event Loop)<br>The application's runtime system manages the queue. [cite_start]Kernel is unaware of these tasks.  | [cite_start]**OS Scheduler**<br>The Operating System manages the queue and decides which thread runs.  | [cite_start]**OS Scheduler**<br>The Operating System manages the queue and distributes processes across CPU cores.  |
-| **Context Switch Cost** | **Ultra Low**<br>Saves only CPU registers. No kernel trap required. | **Medium**<br>Requires kernel trap (mode switch). Saves full CPU state. | [cite_start]**High**<br>Requires kernel trap + **TLB Flush** (memory cache invalidation).  |
-| **Memory Model** | **Shared Address Space**<br>All tasks share the same memory. Efficient but requires care with state. | **Shared Address Space**<br>Threads share heap memory. Requires **Locks/Mutexes** to prevent race conditions. | **Isolated Address Space**<br>Each process has its own memory map. [cite_start]Data must be copied (IPC), which is slow.  |
-| **Parallelism** | **None** (Concurrent)<br>Single CPU core. Tasks run interleaved. | **None in Python** (Concurrent)<br>Limited by GIL (Global Interpreter Lock). Only one thread executes Python bytecode at a time. | **True Parallelism**<br>Bypasses GIL. Multiple processes run on separate CPU cores simultaneously. |
-| **Best For** | **I/O Bound**<br>High concurrency network apps (Websockets, 10k+ connections). | **Blocking I/O**<br>Legacy libraries, file operations, or simple background tasks. | **CPU Bound**<br>Heavy computation (ML, Data Science, Image Processing). |
-
-> **Note on TLB:** The **Translation Lookaside Buffer (TLB)** is a hardware cache for memory addresses. Switching processes (Multiprocessing) forces a TLB flush, slowing down execution as the CPU must "relearn" memory mappings. [cite_start]Switching threads or async tasks preserves the TLB, maintaining high speed.
+| **Context Switch** | **Cooperative (Fast)**<br>The code itself decides when to pause (using `await`). | **Preemptive (Slow)**<br>The OS forces the code to pause and switch tasks. | **Preemptive (Slow)**<br>The OS forces the code to pause and switch tasks. |
+| **Best For** | **Waiting for I/O**<br>(Websockets, APIs, many connections) | **Blocking I/O**<br>(Simple file operations, legacy scripts) | **Heavy Calculation**<br>(Data processing, Machine Learning) |
+| **Memory & Data** | **Shared (Efficient)**<br>Everything runs in one place. Easy access to variables. | **Shared (Careful)**<br>Threads share memory. You need **Locks** to prevent errors. | **Isolated (Expensive)**<br>Each process has its own memory. Data must be **copied** to share it. |
+| **Parallelism** | **None**<br>One task runs at a time. | **None**<br>Only one thread runs at a time (due to GIL). | **True Parallelism**<br>Multiple CPUs work at the same time. |
