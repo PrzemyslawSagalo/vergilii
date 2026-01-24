@@ -12,14 +12,17 @@ Your guide through the complexities of software projects. A curated playbook of 
 
 ## Core Collaboration Principles
 
+* **Domain-First Mindset**
+    We are not paid to write code; we are paid to solve expensive business problems using code. Always understand the Financial/Business domain first—implementation details come second.
+
+* **Ownership and Action**
+    Issues and setbacks are normal in development. When you discover a problem, convert complaints into action by creating a task so it can be tracked, prioritized, and solved.
+
 * **Sprint Commitment**
     Tasks committed to a sprint must be completed by its end. This requires realistic planning, breaking down work properly, and flagging risks early to ensure predictable delivery.
 
 * **Asynchronous-First Communication**
     We communicate asynchronously to protect focus time. Do not expect immediate replies; we respond as soon as we are able. Plan your work accordingly and provide full context in your initial message to make this effective.
-
-* **Ownership and Action**
-    Issues and setbacks are normal in development. When you discover a problem, convert complaints into action by creating a task so it can be tracked, prioritized, and solved.
 
 ## Good coding practices
 
