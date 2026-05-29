@@ -71,3 +71,9 @@
         ```
 
     c. **Write a new commit message.** After saving, another editor opens. Write a single, clear message for the combined commit (e.g., `revert(main): Remove accidental WIP commits`).
+
+## Revert Committed Files
+
+```bash
+git restore --source <commit_hash> -- <file_path>
+```
