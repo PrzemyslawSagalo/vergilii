@@ -19,4 +19,4 @@
 * `git rebase origin/master`
 
 ## git pull
-* `git pull --rebase`
+* `git pull --rebase` - in case of an isse `git rebase --abort`
